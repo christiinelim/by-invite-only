@@ -71,11 +71,13 @@
     }
 
     #newletter-pic{
+        display: flex;
         background-image: url(images/newsletter-pic.png);
         background-size: cover;
         background-position: 50% 50%;
         height: 275px;
         border-radius: 50% 0% 0% 0%;
+        flex-grow: 1;
     }
 
     #newsletter-content{
@@ -87,6 +89,7 @@
         background-color: #F8F7F2;
         border-radius: 0% 0% 50% 0%;
         height: 275px;
+        flex-grow: 1;
     }
 
     #newsletter-content1{
@@ -105,7 +108,7 @@
         background-color: #D5B9B2;
         border: 1px solid #D5B9B2;
         border-radius: 10px;
-        width: 100px;
+        flex-basis: 100px;
     }
 
     #newsletter-content3 button:hover{
@@ -147,6 +150,7 @@
     #footer-image img{
         width: 125px;
         height: auto;
+        flex-shrink: 0;
     }
 
     #footer-image{
@@ -178,7 +182,177 @@
         margin-top: 2%;
         gap: 10px;
     }
+
+
+    /* about us */
+    #about-us-container{
+        margin: 5% 10% 0px 10%;
+    }
+
+    .about-header {
+        font-family: "Lemon";
+        font-weight: bold;
+        font-size: 20px;
+        margin: 30px 0px 15px 0px;
+        color: #D5B9B2;
+    }
+    
+    #vision-header {
+        margin-top: 40px;
+    }
+
+    #about-team {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    #about-team img {
+        background-image: url(images/team.png);
+        background-size: cover;
+        background-position: 50% 100%;
+        width: 100%;
+    }
+    
+    #about-writeup p {
+        padding-top: 8px;
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+    
+    #about-writeup h1 {
+        font-size: 25px;
+        color: #5f685d;
+    }
+    
+    .mission-container {
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    
+    .mission-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgba(188,188,167, 0.5);
+        height: 100px;
+        margin-left: 2.5%;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    
+    .mission-box:hover {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    }
+    
+    .vision {
+        font-size: 16px;
+        font-weight: bold;
+        color: #5f685d;
+    }
+    
+    .about-banner {
+        font-family: "Lemon";
+        font-size: 20px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-banner a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .catalogue-banner {
+        background-image: url(images/team-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .locations-banner {
+        background-image: url(images/catalogue-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+    }
+
+    /* locations */
+    #locations-container{
+        margin: 50px 10% 0px 10%;
+    }
+
+    #locations-header{
+        font-family: "Lemon";
+        font-size: 20px;
+        color: #D5B9B2;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    #locations-cta{
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .locations-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .location-card{
+        margin-bottom: 40px;
+    }
+
+    .location-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location-image img{
+        width: 50%;
+        height: auto;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        border-radius: 0px 30px 0px 30px;
+    }
+
+    .location-place{
+        color: #5f685d;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .location-concise{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .location-address{
+        text-align: center;
+    }
 }
+
+
+
+
+
+
+
 
 
 /* medium screen */
@@ -247,6 +421,7 @@
         background-position: 50% 50%;
         height: 100%;
         border-radius: 50% 0% 0% 0%;
+        flex-grow: 1;
     }
 
     #newsletter-content{
@@ -257,6 +432,7 @@
         gap: 5%;
         background-color: #F8F7F2;
         border-radius: 0% 0% 50% 0%;
+        flex-grow: 1;
     }
 
     #newsletter-content1{
@@ -275,7 +451,7 @@
         background-color: #D5B9B2;
         border: 1px solid #D5B9B2;
         border-radius: 10px;
-        width: 100px;
+        flex-basis: 100px;
     }
 
     #newsletter-content3 button:hover{
@@ -317,6 +493,7 @@
     #footer-image img{
         width: 125px;
         height: auto;
+        flex-shrink: 0;
     }
 
     #footer-image{
@@ -348,7 +525,181 @@
         margin-top: 2%;
         gap: 10px;
     }
+
+    /* about us */
+    #about-us-container{
+        margin: 50px 80px 0px 80px;
+    }
+
+    .about-header {
+        font-family: "Lemon";
+        font-weight: bold;
+        font-size: 23px;
+        margin: 30px 0px 15px 0px;
+        color: #D5B9B2;
+    }
+    
+    #vision-header {
+        margin-top: 50px;
+    }
+
+    #about-team {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    #about-team img {
+        background-image: url(images/team.png);
+        background-size: cover;
+        background-position: 50% 100%;
+        width: 100%;
+    }
+    
+    #about-writeup p {
+        padding-top: 8px;
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+    
+    #about-writeup h1 {
+        font-size: 25px;
+        color: #5f685d;
+    }
+    
+    .mission-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    
+    .mission-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgba(188,188,167, 0.5);
+        height: 200px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    
+    .mission-box:hover {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    }
+    
+    .vision {
+        font-size: 18px;
+        font-weight: bold;
+        color: #5f685d;
+    }
+    
+    .about-banner {
+        font-family: "Lemon";
+        font-size: 23px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-banner a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .catalogue-banner {
+        background-image: url(images/team-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 130px;
+        align-items: center;
+        margin-top: 90px;
+    }
+    
+    .locations-banner {
+        background-image: url(images/catalogue-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 130px;
+        align-items: center;
+    }
+
+    /* locations */
+    #locations-container{
+        margin: 60px 80px 0px 80px;
+    }
+
+    #locations-header{
+        font-family: "Lemon";
+        font-size: 23px;
+        color: #D5B9B2;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+
+    #locations-cta{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .locations-content{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .location-card{
+        margin-bottom: 60px;
+    }
+
+    .location-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location-image img{
+        width: 60%;
+        height: auto;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        border-radius: 0px 30px 0px 30px;
+    }
+
+    .location-place{
+        color: #5f685d;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .location-concise{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .location-address{
+        text-align: center;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* large screen */
@@ -418,6 +769,7 @@
         background-position: 50% 50%;
         height: 100%;
         border-radius: 50% 0% 0% 0%;
+        flex-grow: 1;
     }
 
     #newsletter-content{
@@ -428,6 +780,7 @@
         gap: 10%;
         background-color: #F8F7F2;
         border-radius: 0% 0% 50% 0%;
+        flex-grow: 1;
     }
 
     #newsletter-content1{
@@ -446,7 +799,7 @@
         background-color: #D5B9B2;
         border: 1px solid #D5B9B2;
         border-radius: 10px;
-        width: 100px;
+        flex-basis: 100px;
     }
 
     #newsletter-content3 button:hover{
@@ -488,6 +841,7 @@
     #footer-image img{
         width: 150px;
         height: auto;
+        flex-shrink: 0;
     }
 
     #footer-image{
@@ -518,5 +872,160 @@
         padding-left: 5%;
         margin-top: 2%;
         gap: 10px;
+    }
+
+
+
+    /* about us */
+    #about-us-container{
+        margin: 60px 100px 0px 100px;
+    }
+
+    .about-header {
+        font-family: "Lemon";
+        font-weight: bold;
+        font-size: 25px;
+        margin: 30px 0px 15px 0px;
+        color: #D5B9B2;
+    }
+    
+    #vision-header {
+        margin-top: 100px;
+    }
+
+    #about-team {
+        display: flex;
+        align-items: center;
+    }
+    
+    #about-team img {
+        background-image: url(images/team.png);
+        background-size: cover;
+        background-position: 50% 100%;
+        width: 100%;
+    }
+    
+    #about-writeup p {
+        padding-top: 10px;
+        text-align: justify;
+    }
+    
+    #about-writeup h1 {
+        font-size: 25px;
+        color: #5f685d;
+    }
+    
+    .mission-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    
+    .mission-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgba(188,188,167, 0.5);
+        height: 200px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    
+    .mission-box:hover {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    }
+    
+    .vision {
+        font-size: 20px;
+        font-weight: bold;
+        color: #5f685d;
+    }
+    
+    .about-banner {
+        font-family: "Lemon";
+        font-size: 25px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-banner a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .catalogue-banner {
+        background-image: url(images/team-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    .locations-banner {
+        background-image: url(images/catalogue-banner.png);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        align-items: center;
+    }
+
+    /* locations */
+    #locations-container{
+        margin: 60px 100px 0px 100px;
+    }
+
+    #locations-header{
+        font-family: "Lemon";
+        font-size: 25px;
+        color: #D5B9B2;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #locations-cta{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .location-card{
+        margin-bottom: 80px;
+    }
+
+    .location-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location-image img{
+        width: 50%;
+        height: auto;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        border-radius: 0px 30px 0px 30px;
+    }
+
+    .location-place{
+        color: #5f685d;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .location-concise{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .location-address{
+        text-align: center;
     }
 }
