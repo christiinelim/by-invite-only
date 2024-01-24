@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Invite Only</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="my-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="image of brand"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="my-navbar-list">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Catalogue</a>
+                    <a class="nav-link" href="#">Locations</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousell -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/hero-image.png" class="d-block w-100" alt="hero image in carousell">
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero-image2.png" class="d-block w-100" alt="hero image in carousell">
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero-image3.png" class="d-block w-100" alt="hero image in carousell">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Shop by Categories -->
+    <div id="categories-container">
+      <div id="categories-header">
+        BROWSE BY CATEGORY
+      </div>
+      <div id="categories-description">
+        Discover a world of artisanal craftsmanship in our collection of hand-crafted jewelry pieces.
+      </div>
+      <div id="categories-display-container">
+        <div class="row" id="categories-row">
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/bracelet.png" class="card-img-top" alt="image of bracelet catalogue">
+              <div class="card-body">
+                <p class="card-text">Bracelets</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/earrings.png" class="card-img-top" alt="image of earring catalogue">
+              <div class="card-body">
+                <p class="card-text">Earrings</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/rings.png" class="card-img-top" alt="image of ring catalogue">
+              <div class="card-body">
+                <p class="card-text">Rings</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/best-sellers.png" class="card-img-top" alt="image of best sellers catalogue">
+              <div class="card-body">
+                <p class="card-text">Best Sellers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/fine-jewelry.png" class="card-img-top" alt="image of fine jewelry catalogue">
+              <div class="card-body">
+                <p class="card-text">Gift Set</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 categories-card">
+            <div class="card">
+              <img src="images/gifts.png" class="card-img-top" alt="image of gifts catalogue">
+              <div class="card-body">
+                <p class="card-text">Promotion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Join newsletter -->
+    <div id = "newletter-container">
+      <div id="newletter-pic" class="col-12 col-md-6">
+        
+      </div>
+      <div id="newsletter-content" class="col-12 col-md-6">
+        <div id="newsletter-content1">
+          JOIN OUR NEWSLETTER
+        </div>
+        <div id="newsletter-content2">
+          Receive information about our exclusive promotional events and get 15% off your first online order!
+        </div>
+        <div id="newsletter-content3">
+          <form>
+            <input placeholder="Enter email address" />
+            <div id="button-submit"><button>Join</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer-content">
+        <div id="footer-image">
+          <img src="images/brand-name.png" alt="image of brand logo"/>
+        </div>
+        <div class="row" id="footer-container">
+          <div class="col-5 col-md-5">
+            <div class="footer-head">
+              Contact Us
+            </div>
+            <div class="footer-details">
+              <div class="col-12 footer-details-list">Orchard Central #01-465 Singapore 836725</div>
+              <div class="col-12 footer-details-list">+65 6754 8765</div>
+              <div class="col-12 footer-details-list">byinviteonly.co</div>
+            </div>
+          </div>
+  
+          <div class="col-4 col-md-4">
+            <div class="footer-head">
+              Navigate
+            </div>
+            <div class="footer-details">
+              <div class="col-12 footer-details-list"><a href="/">Home</a></div>
+              <div class="col-12 footer-details-list"><a href="/about-us.html">About Us</a></div>
+              <div class="col-12 footer-details-list"><a href="/deposit-food.html">Catalogue</a></div>
+              <div class="col-12 footer-details-list"><a href="/deposit-food.html">Locations</a></div>
+            </div>
+          </div>
+  
+          <div class="col-3 col-md-3">
+            <div class="footer-head">
+              Social Media
+            </div>
+            <div class="footer-details">
+              <div class="col-12 footer-details-list"><a href="/">Facebook</a></div>
+              <div class="col-12 footer-details-list"><a href="/">Instagram</a></div>
+              <div class="col-12 footer-details-list"><a href="/">Tik Tok</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
